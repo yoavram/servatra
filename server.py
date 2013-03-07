@@ -14,6 +14,8 @@ app = Flask(__name__)
 app.config.from_object(__name__)  
 #app.config.from_pyfile('config.py')
 
+# 'Content-Type': 'application/json'
+
 @app.route("/")
 def index():
 	return jsonify({})
